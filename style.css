@@ -1,0 +1,72 @@
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header  {
+width: 100%;
+border: 2px solid black;
+font-family: 'Dancing Script', cursive;
+display: flex;
+align-items: center;
+/* flex-wrap: wrap; */
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: 0;
+ 
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.burger {
+    display: none;
+}
+
+
+
+input {
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    transition: 1s;
+}
+
+.nav {
+    width: 100%;
+}
+
+input:focus {
+    box-shadow: 10px 10px 10px blue;
+}
+
+@media (max-width: 920px){
+    .nav {
+        width: 80%;
+    }
+    .burger {
+        display: block;
+    }
+    .list {
+        display: block;
+        margin-left: -400px;
+        transition: 1s;
+    }
+    .NewList {
+    margin-left: 10px
+}
+}
